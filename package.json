@@ -1,6 +1,6 @@
 {
   "name": "@vibecontrols/vibe-plugin-copilot",
-  "version": "0.0.0-dev",
+  "version": "2026.329.1",
   "type": "module",
   "main": "./dist/index.js",
   "description": "GitHub Copilot AI agent provider for VibeControls Agent",
