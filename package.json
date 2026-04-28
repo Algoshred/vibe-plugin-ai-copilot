@@ -1,6 +1,6 @@
 {
-  "name": "@vibecontrols/vibe-plugin-copilot",
-  "version": "2026.428.1",
+  "name": "@vibecontrols/vibe-plugin-ai-copilot",
+  "version": "2026.428.3",
   "type": "module",
   "main": "./dist/index.js",
   "description": "GitHub Copilot AI agent provider for VibeControls Agent",
@@ -57,14 +57,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/algoshred/vibe-plugin-copilot.git"
+    "url": "git+https://github.com/algoshred/vibe-plugin-ai-copilot.git"
   },
   "bugs": {
-    "url": "https://github.com/algoshred/vibe-plugin-copilot/issues"
+    "url": "https://github.com/algoshred/vibe-plugin-ai-copilot/issues"
   },
   "homepage": "https://vibecontrols.com",
   "publishConfig": {
-    "access": "restricted",
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "files": [
