@@ -6,7 +6,11 @@
  */
 
 import { Elysia } from "elysia";
-import type { HostServices, VibePlugin } from "@vibecontrols/plugin-sdk";
+import type {
+  HostServices,
+  VibePlugin,
+  ProfileContext,
+} from "@vibecontrols/plugin-sdk";
 import {
   BoundLogger,
   ProviderRegistry,
@@ -502,7 +506,7 @@ type CopilotVibePlugin = VibePlugin & {
   providers?: { ai?: AIAgentProvider };
 };
 
-export const vibePlugin: CopilotVibePlugin = {
+export const createPlugin = (_ctx: ProfileContext): CopilotVibePlugin => ({
   capabilities: {
     secrets: "read",
     subprocess: true,
@@ -525,6 +529,4 @@ export const vibePlugin: CopilotVibePlugin = {
   createRoutes: () => createPrereqsRoutes(),
   onServerStart: lifecycle.onServerStart,
   onServerStop: lifecycle.onServerStop,
-};
-
-export default vibePlugin;
+});
