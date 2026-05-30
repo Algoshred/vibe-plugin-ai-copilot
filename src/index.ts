@@ -423,7 +423,7 @@ function getCliVersion(): string | null {
       stderr: "pipe",
     });
     if (proc.exitCode === 0)
-      return proc.stdout.toString().trim().split("\n")[0] || "gh copilot";
+      return proc.stdout.toString().trim().split(/\r?\n/)[0] || "gh copilot";
   } catch {
     // Binary or extension not found.
   }
